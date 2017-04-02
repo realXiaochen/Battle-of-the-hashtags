@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Battle of hashtags</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="jumbotron">
+		<div class = "container">
+			<h1 class="display-3">The Battle of the Hashtags</h1>
+		</div>
+	</div>
+
+	{% for contest in contest_list %}
+	<div class = "container">
+		<div class = "col-sm-6 col-md-4" style = "">
+			<div class = "lead" style ="text-align: center">
+				{{contest}}
+			</div>
+			<div class = "row">
+				<p>
+				<div class = 'row'>
+					<div class ="col-md-3">
+						#{{contest.hashtag_1}}:
+					</div>
+					<div class ="col-md-3">
+						 {{contest.c1}} 
+					</div>
+				</div>
+				<p>
+				<div class = 'row'>
+					<div class ="col-md-3">
+						#{{contest.hashtag_2}}:
+					</div>
+					<div class ="col-md-3">
+						{{contest.c2}} 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<hr>
+	{% endfor %}
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
