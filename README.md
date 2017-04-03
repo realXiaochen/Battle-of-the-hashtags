@@ -13,7 +13,7 @@ After a predetermined amount of time, the winning hashtag will be the one with t
 ## Tools
 - Django
 - Celery + Redis
-- Twitter Search API  + oauth2
+- Twitter Search API  + oauth2 (rate limit)
 - Django REST framework
 - Booststrap
 
@@ -26,7 +26,7 @@ After a predetermined amount of time, the winning hashtag will be the one with t
     $ source bin/activate
     $ git clone https://github.com/realXiaochen/The-battle-of-the-hashtags.git src
    
-## Start server
+## Start the server
 
     $ cd src
     
@@ -52,18 +52,20 @@ Start Redis in one window, as a task pool
 
     redis-server
 
-Start Celery in another, it runs periodical task outside the normal Django cycle
+Start Celery in another, it runs periodical tasks.
+
+Because of rate limit, only one battle/contest will do the counting every 15s.
 
     celery -A myproject worker -l debug
     
-## Battle result
+## Battle results
 Just go to localhost
 
     http://127.0.0.1:8000/
     
 ## REST API
 
-Get all result
+Get all results
 
     http://127.0.0.1:8000/api/contests
     
