@@ -10,17 +10,17 @@ Tested only in Mac OS.
 
 ## Structure
 
-- myproject
+/myproject
 
-setting, celery task, main url
+    setting, celery task, main url
     
-- contest
+/contest
 
-main class, handles twitter stuff
+    main class, handles twitter stuff
 
-- api
+/api
 
-REST API
+    REST API
 
 ## Tools
 - Django
