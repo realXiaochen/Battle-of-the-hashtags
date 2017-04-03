@@ -65,7 +65,7 @@ Start Redis in one window, as a task pool
 
     $ redis-server
 
-Start Celery in another, it runs periodical tasks.
+Start Celery in another, it runs periodical tasks in background.
 
 Because of rate limit, only one battle/contest will do the counting every 15s.
 
