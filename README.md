@@ -12,11 +12,11 @@ Tested only in Mac OS.
 
 /myproject
 
-    setting, celery task, main url
+    Project setting, Celery task, Main url
     
 /contest
 
-    main class, handles twitter stuff
+    Main class, Twitter stuff
 
 /api
 
