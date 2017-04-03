@@ -15,9 +15,11 @@ Tested only in Mac OS.
 setting, celery task, main url
     
 - contest
+
 main class, handles twitter stuff
 
 - api
+
 REST API
 
 ## Tools
