@@ -11,11 +11,14 @@ Tested only in Mac OS.
 ## Structure
 
 - myproject
-    setting, celery task, main url
+
+setting, celery task, main url
+    
 - contest
-    main class, handles twitter stuff
+main class, handles twitter stuff
+
 - api
-    REST API
+REST API
 
 ## Tools
 - Django
