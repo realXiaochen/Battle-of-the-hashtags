@@ -62,13 +62,13 @@ Open two seperate command line window, enter virtualenv, go to /src
 
 Start Redis in one window, as a task pool
 
-    redis-server
+    $ redis-server
 
 Start Celery in another, it runs periodical tasks.
 
 Because of rate limit, only one battle/contest will do the counting every 15s.
 
-    celery -A myproject worker -l debug
+    $ celery -A myproject worker -l debug
     
 ## Battle results
 Just go to localhost
