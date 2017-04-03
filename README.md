@@ -4,6 +4,8 @@ This application allows an administrator to create ‘contests’ between two ha
 A programmatic and automated approach is used to fetch tweets from the hashtags in question, on a periodic basis.
 After a predetermined amount of time, the winning hashtag will be the one with the smallest total number of typos.
 
+Tested only in Mac OS.
+
 ## Structure
 
 - myproject: setting, celery task, main url
@@ -37,8 +39,8 @@ After a predetermined amount of time, the winning hashtag will be the one with t
 
 ## Create a battle
 
-    http://127.0.0.1:8000/admin
-
+    http://127.0.0.1:8000/admin    (your_localhost/admin)
+    
 - username: admin
 - password: 12345678a
 - To start a battle, create a 'contest' object, or use the existing '#android vs #google'.
