@@ -54,7 +54,8 @@ Open two seperate command line window, enter virtualenv, go to /src
 #### Start Celery in another, it runs periodical task outside the normal Django cycle
     celery -A myproject worker -l debug
     
-## View Result at front-end
+## Battle result
+Just go to localhost
 
     http://127.0.0.1:8000/
     
