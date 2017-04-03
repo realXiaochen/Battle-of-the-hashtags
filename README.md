@@ -11,7 +11,7 @@ Tested only in Mac OS.
 ## Structure
 
 - myproject: setting, celery task, main url
-- contest: main class
+- contest: main class, handles twitter stuff
 - api: REST API
 
 ## Tools
