@@ -11,7 +11,7 @@ After a predetermined amount of time, the winning hashtag will be the one with t
 - api: REST API
 
 ## Tools
-- Django,
+- Django
 - Celery + Redis
 - Twitter Search API  + oauth2
 - Django REST framework
@@ -20,22 +20,33 @@ After a predetermined amount of time, the winning hashtag will be the one with t
 ## Setup
 #### Start a virutal environment
 
-  $ pip install virtualenv
-  $ virtualenv test_env
-  $ cd test_env
-  $ git clone https://github.com/realXiaochen/The-battle-of-the-hashtags.git src
+    $ pip install virtualenv
+    $ virtualenv test_env (or anywhere you want)
+    $ cd test_env
+    $ source bin/activate
+    $ git clone https://github.com/realXiaochen/The-battle-of-the-hashtags.git src
    
 ## Start server
 
-  $ cd src
-  $ ./manage.py makemigrations
-  $ ./manage.py migrate
-  $ ./manage.py runserver
+    $ cd src
+    
+    $ ./manage.py makemigrations
+    $ ./manage.py migrate
+    
+    $ ./manage.py runserver
 
-## Create battle
+## Create a battle
+
+    http://127.0.0.1:8000/admin
+
+- username: admin
+- password: 12345678a
+- To start a battle, create a 'contest' object, or use the existing '#android vs #google'.
+- This app only searches recent/future tweets.
 
 
-## Start battle
+## Start a battle
+Open two seperate command line window, enter 
 
 ## View Result
 
