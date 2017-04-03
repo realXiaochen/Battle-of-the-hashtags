@@ -73,6 +73,6 @@ Get all results
 
     http://127.0.0.1:8000/api/contests
     
-Get result by id. Id is visible in admin, I created an object with id 22.
+Get result by id(visible in admin)
 
     http://127.0.0.1:8000/api/contests/22
