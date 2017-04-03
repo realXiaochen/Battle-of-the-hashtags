@@ -27,7 +27,7 @@ Tested only in Mac OS.
 - Celery + Redis
 - Twitter Search API  + oauth2 (rate limit)
 - Django REST framework
-- Booststrap
+- Bootstrap
 
 ## Setup
 
