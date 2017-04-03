@@ -88,4 +88,4 @@ Get result by id(visible in admin, here I use id=22)
 
  Authentication & Permissions
  
-    Not enough time :(
+    Not enough time
