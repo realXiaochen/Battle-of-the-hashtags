@@ -41,7 +41,8 @@ Tested only in Mac OS.
 
 ## Create a battle
 
-    http://127.0.0.1:8000/admin    (your_localhost/admin)
+    http://127.0.0.1:8000/admin    (your_localhost/admin)
+    
     
 - username: admin
 - password: 12345678a
