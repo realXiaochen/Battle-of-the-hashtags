@@ -40,6 +40,7 @@ Tested only in Mac OS.
 ## Start the server
 
     $ cd src
+    $ pip install -r requirements.txt
     
     $ ./manage.py makemigrations
     $ ./manage.py migrate
@@ -71,7 +72,7 @@ Because of rate limit, only one battle/contest will do the counting every 15s.
     $ celery -A myproject worker -l debug
     
 ## Battle results
-Just go to localhost
+Go to localhost, no ajax, please refreash.
 
     http://127.0.0.1:8000/
     
