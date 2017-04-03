@@ -46,8 +46,23 @@ After a predetermined amount of time, the winning hashtag will be the one with t
 
 
 ## Start a battle
-Open two seperate command line window, enter 
+Open two seperate command line window, enter virtualenv, go to /src
 
-## View Result
+#### Start Redis in one window, as a task pool
+    redis-server
 
+#### Start Celery in another, it runs periodical task outside the normal Django cycle
+    celery -A myproject worker -l debug
+    
+## View Result at front-end
+    http://127.0.0.1:8000/ (your local host)
+    
 ## REST API
+
+#### Get all battle/contests
+    http://127.0.0.1:8000/api/contests
+    
+#### Get battle/contests by id
+Id is visible in admin, I created a object with id 22.
+
+    http://127.0.0.1:8000/api/contests/22
