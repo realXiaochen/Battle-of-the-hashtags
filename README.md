@@ -85,3 +85,7 @@ Get all results
 Get result by id(visible in admin)
 
     http://127.0.0.1:8000/api/contests/22
+
+ Authentication & Permissions
+ 
+    Not enough time.
