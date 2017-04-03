@@ -6,7 +6,7 @@ class ContestForm(forms.ModelForm):
 
 	class Meta:
 		model = Contest
-		fields = ['hashtag_1','hashtag_2','start_time','end_time']
+		fields = ['id','hashtag_1','hashtag_2','start_time','end_time']
 		start_date = forms.DateField(widget=AdminDateWidget())
 		end_date = forms.DateField(widget=AdminDateWidget())
 

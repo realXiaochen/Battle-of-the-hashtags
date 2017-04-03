@@ -5,7 +5,7 @@ from .forms import ContestForm
 # Register your models here.
 
 class ContestAdmin(admin.ModelAdmin):
-	list_display = ["__unicode__","timestamp"]
+	list_display = ['id',"__unicode__","timestamp"]
 	form = ContestForm
 
 admin.site.register(Contest,ContestAdmin)

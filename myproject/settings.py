@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'contests',
     'djcelery',
+    'rest_framework',
+    'api',
 ]
 
 MIDDLEWARE = [

@@ -46,6 +46,11 @@ class Contest(models.Model):
 	def add_2(self,n):
 		self.c2 += n
 
+	def result(self):
+		if self.c1 < self.c2: return "Winner is " +str(self.hashtag_1)
+		if self.c2 < self.c1: return "Winner is " +str(self.hashtag_2)
+		return 'draw game'
+
 	def start_counting(self):
 		# Twitter REST API
 		CONSUMER_KEY = 'CnmZDwmnx9KenyOXJKgNFVZFd'
@@ -62,7 +67,9 @@ class Contest(models.Model):
 			if e.startswith('#'):e = e[1:]
 		c = [0,0]
 		d = enchant.Dict("en_US")
-		d.check('fuckoff')
+		t1 = (timezone.now() - self.end_time).total_seconds()
+		t2 = (timezone.now() - self.start_time).total_seconds()
+		if t1>=0 or t2<=0:return 
 		for idx,tag in enumerate(h):
 			url = 'https://api.twitter.com/1.1/search/tweets.json?q=%23' + tag + '&result_type=recent'
 			response, data = client.request(url)
@@ -94,8 +101,9 @@ class Contest(models.Model):
 		self.add_1(c[0])
 		self.add_2(c[1])
 		self.save()
-		print self.c1
-		print self.c2
+
+		print str(self.hashtag_1) + ": " + str(self.c1)
+		print str(self.hashtag_2)+ ": " + str(self.c2)
 
 
 

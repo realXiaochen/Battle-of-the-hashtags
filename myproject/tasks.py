@@ -11,6 +11,6 @@ import time
 @app.task
 def simple_task():
 	while True:
-		time.sleep(15)
 		for c in Contest.objects.all():
 			c.start_counting()
+		time.sleep(15)
