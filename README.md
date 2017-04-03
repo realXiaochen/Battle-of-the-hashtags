@@ -22,7 +22,6 @@ Tested only in Mac OS.
 - Booststrap
 
 ## Setup
-#### Start a virutal environment
 
     $ pip install virtualenv
     $ virtualenv test_env (or anywhere you want)
