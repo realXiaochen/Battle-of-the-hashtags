@@ -55,7 +55,8 @@ Open two seperate command line window, enter virtualenv, go to /src
     celery -A myproject worker -l debug
     
 ## View Result at front-end
-    http://127.0.0.1:8000/ (your local host)
+
+    http://127.0.0.1:8000/
     
 ## REST API
 
