@@ -59,9 +59,9 @@ Tested only in Mac OS.
 
 
 ## Start a battle
-Open two seperate command line window, enter virtualenv, go to /src
+Open two seperate command line windows, enter the virtualenv, go to /src
 
-Start Redis in one window, as a task pool
+Start Redis in one window, as a task pool.
 
     $ redis-server
 
